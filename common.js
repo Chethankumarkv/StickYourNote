@@ -269,7 +269,7 @@ class StickyNoteApp {
                 </div>
                   <div class="star-icon">
                   
-                        <img id="star" class="star" src="/Images/starLogo.png" alt="Star Icon">
+                        <img id="star" class="star" src="starLogo.png" alt="Star Icon">
                    </div>
                 <div class="sticky-buttons">
                 
