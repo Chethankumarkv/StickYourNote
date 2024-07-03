@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: auto;
+    margin-left: 0%;
+
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.user-icon {
+    margin-left: 15px;
+}
+
+.user-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+
+.MainContainer {
+    display: flex;
+    max-width: 95%;
+    margin: 1% 0%;
+    background-color: #fff;
+
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5%;
+    border-radius: 10px;
+
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+    font-family: cursive;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 3%;
+}
+
+.sidebar ul li button.option-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar ul li button.option-btn:hover {
+    background-color: #cbdf86;
+    color: #000000;
+}
+
+.mainBar {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 30px 30px 43px -40px rgba(89, 86, 89, 1);
+    -moz-box-shadow: 30px 30px 43px -40px rgba(89, 86, 89, 1);
+    box-shadow: 30px 30px 43px -40px rgba(89, 86, 89, 1);
+    border-radius: 10px;
+    background: rgb(255, 234, 234);
+    background: linear-gradient(90deg, rgba(255, 234, 234, 0.47102591036414565) 0%, rgba(255, 229, 25, 0.37298669467787116) 100%);
+}
+
+.mainBar h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: cursive;
+
+}
+
+#sticky-notes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.sticky {
+    display: flex;
+    width: calc(100% - 20px);
+    background-color: #b6b6b6;
+    margin: 0.5% auto;
+    padding: 1.5%;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  
+}
+
+.sticky-title {
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.content {
+    flex: 0.95;
+}
+.date{
+   
+    margin-top: 1%;
+    margin-right: 10%;
+
+}
+.star-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-right: 10%;
+
+}
+
+.sticky.starred {
+    background-color: #ff9063;
+}
+
+.sticky-note h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sticky-note p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+
+    padding: 3%;
+    border: 1.5px solid #000000;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#note-title,
+#edit-note-title,
+textarea {
+    width: 100%;
+    padding: 1%;
+
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 0%;
+
+}
+
+
+button:hover {
+    background-color: #cbdf86;
+    color: #000000;
+}

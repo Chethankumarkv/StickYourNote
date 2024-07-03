@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick-Your-Note</title>
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">StickUrNote</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...🔍">
+                <button type="submit">Search</button>
+            </div>
+            
+            <div class="nav-links">
+                
+                <div class="user-icon">
+                    <a href="https://chethankumarkv.github.io/"><img src="/Images/user-icon2.png" alt="User Icon"></a>
+                </div>
+               
+            </div>
+        </div>
+    </nav>
+
+    <div class="MainContainer">
+        <div class="sidebar">
+            <h2>ToolBar  🔍</h2>
+            <ul>
+                <li><button class="option-btn" id="add-note-btn"><span>➕</span>Add Sticky Note</button></li>
+                <li><button class="option-btn" id="view-note"><span>👁️</span>View All Notes</button></li>
+                <li><button class="option-btn" id="star-note"><span>⭐</span>View Starred Notes</button></li>
+                <li><button class="option-btn" id="clear-All"><span>🧹</span>Clear All Notes</button></li>
+                <li><button class="option-btn" id="deleted"><span>♻️</span>Deleted Notes</button></li>
+                <li><button class="option-btn" id="recycle"><span>🚮</span>Clear Recycle Bin</button></li>
+                
+            </ul>
+        </div>
+        <div class="mainBar">
+            <h2>Welcome to Sticky Notes App 📝</h2>
+
+            <div id="sticky-notes">
+
+            </div>
+        </div>
+       
+        <div id="addModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Sticky Note</h2>
+                <input type="text" id="note-title" placeholder="Title">
+                <textarea id="note-text" rows="5" placeholder="Enter your note..."></textarea>
+                <button id="add-note">Add Note</button>
+            </div>
+        </div>
+
+      
+        <div id="editModal" class="modal modalEdit hidden">
+            <div class="modal-content">
+                <span class="close closeEdit">&times;</span>
+                <h2>Edit Sticky Note</h2>
+                <input type="text" id="edit-note-title" placeholder="Title">
+                <textarea id="edit-note-text" rows="5" placeholder="Enter your note..."></textarea>
+                <button id="update-note">Update Note</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="/Scripts/common.js"></script>
+    
+</body>
+
+</html>
